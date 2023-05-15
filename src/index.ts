@@ -1,7 +1,3 @@
-import Dimension from './Dimension'
-class UI {
-  dimension: Dimension| null = null
-  constructor(dimension:,){
-    this.dimension = dimension
-  }
-}
+import Provider from './Provider';
+
+export default Provider;
