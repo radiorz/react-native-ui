@@ -158,7 +158,7 @@ export function getSizeStyle(...values: any[]) {
         return `min-height: ${sizeLevel * theme.dimension.oneSpace}px`;
       return '';
     })(values[0])};
-    ${(({ size, sizeLevel, minWidth, minWidthLevel }: any) => {
+    ${(({ size, sizeLevel, minWidth, minWidthLevel, theme }: any) => {
       if (isNumber(minWidth)) return `min-width: ${minWidth}px`;
       if (isNumber(minWidthLevel))
         return `min-width: ${minWidthLevel * theme.dimension.oneSpace}px`;
