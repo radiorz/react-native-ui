@@ -18,7 +18,7 @@ import type Dimension from './Dimension';
 import { commonBlue } from './colors';
 interface ProviderProps {
   dimension: Dimension;
-  colors: any;
+  colors?: any;
   children?: any;
 }
 
