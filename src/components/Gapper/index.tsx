@@ -13,7 +13,7 @@
  */
 import React, { memo } from 'react';
 import { View } from 'react-native';
-import { FLEX_DIRECTIONS, ONE_SPACE_NUMBER } from '~/utils/variables';
+import { FLEX_DIRECTIONS, ONE_SPACE_NUMBER } from '../../utils/variables';
 
 interface GapperProps {
   gap?: number;

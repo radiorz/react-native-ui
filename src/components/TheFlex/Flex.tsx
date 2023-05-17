@@ -1,7 +1,7 @@
 import { isString } from 'lodash';
 import styled from 'styled-components/native';
 import { getBoxStyle, getFlexStyle } from '../../style';
-import GapWrapper from '~/components/GapWrapper';
+import GapWrapper from '../../components/GapWrapper';
 
 // ****** Flex 布局 ******
 const _Flex = styled.View.attrs((props: any) => {

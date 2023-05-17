@@ -1,6 +1,6 @@
 import React from 'react';
 import { isArray, isNumber, isObject } from 'lodash';
-import DefaultGapper from '~/components/Gapper';
+import DefaultGapper from '../../components/Gapper';
 
 /**
  * 添加Gap

@@ -2,8 +2,8 @@ import { isArray, isNumber, isObject, isString } from 'lodash';
 import styled from 'styled-components/native';
 import React from 'react';
 import Animated from 'react-native-reanimated';
-import { getBoxStyle, getFlexStyle } from '~/style';
-import Gapper from '~/components/Gapper';
+import { getBoxStyle, getFlexStyle } from '../../style';
+import Gapper from '../../components/Gapper';
 
 export function getGapNumber({ gap, gapLevel, theme }: any) {
   if (isNumber(gap)) return gap;

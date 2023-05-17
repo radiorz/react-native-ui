@@ -1,7 +1,7 @@
 import { isString } from 'lodash';
 import styled from 'styled-components/native';
-import { getBoxStyle } from '~/style';
-import { BaseButtonFontSize } from '~/utils/variables';
+import { getBoxStyle } from '../../style';
+import { BaseButtonFontSize } from '../../utils/variables';
 // react native 默认的 button 不过好像不能嵌套 icon
 export const NativeButton = styled.Button.attrs(({ title, children }: any) => {
   // 添加了 children 的形式

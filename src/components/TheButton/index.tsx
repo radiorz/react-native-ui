@@ -21,7 +21,7 @@ import {
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
-import AnimatedFlex from '~/components/TheFlex/AnimatedFlex';
+import AnimatedFlex from '../../components/TheFlex/AnimatedFlex';
 import Text from '../TheText';
 
 function TheButton({ pressed, icon, theText, buttonProps }: any) {
