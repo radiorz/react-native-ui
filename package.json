@@ -81,8 +81,9 @@
     "lodash": "*",
     "react": "*",
     "react-native": "^0.66",
-    "styled-component": "*",
-    "react-native-reanimated": "*"
+    "react-native-linear-gradient": "^2.6.2",
+    "react-native-reanimated": "*",
+    "styled-component": "*"
   },
   "engines": {
     "node": ">= 16.0.0"

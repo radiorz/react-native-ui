@@ -4,7 +4,11 @@ import { addPx } from '../../style';
 import { BaseFontSize, BaseFontGap } from '../../utils/variables';
 import { getMarginStyle, getSizeStyle } from '../../style';
 import type Dimension from '../../Dimension';
-export default styled.Text`
+export default styled.Text<{
+  textAlign?: string;
+  isContrast?: boolean;
+  fontSize?: string | number;
+}>`
   ${getFontSizeStyle}
   ${getSizeStyle}
   ${getTextColorStyle}
