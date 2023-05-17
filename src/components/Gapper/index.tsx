@@ -14,16 +14,17 @@
 import React, { memo } from 'react';
 import { View } from 'react-native';
 import { FLEX_DIRECTIONS, ONE_SPACE_NUMBER } from '../../utils/variables';
-
+import { useTheme } from 'styled-components/native';
 interface GapperProps {
   gap?: number;
   gapLevel?: number;
   flexDirection?: string;
-  theme?: any;
 }
 function Gapper(props: GapperProps) {
-  let { gap, theme } = props;
+  let { gap } = props;
   const { gapLevel, flexDirection } = props;
+  const theme = useTheme();
+  console.log(`theme`, theme);
   if (!gap && gapLevel) gap = gapLevel * ONE_SPACE_NUMBER;
   // console.log(`flexDirection`, flexDirection, gap);
   // 垂直
@@ -38,7 +39,7 @@ function Gapper(props: GapperProps) {
         style={{
           // width: '100%',
           // backgroundColor: 'red',
-          height: theme.dimension.normalizeHeight(gap),
+          height: (theme as any).dimension.normalizeHeight(gap) || 0,
         }}
       />
     );
@@ -49,7 +50,7 @@ function Gapper(props: GapperProps) {
       style={{
         // height: '100%',
         // backgroundColor: 'red',
-        width: theme.dimension.normalizeWidth(gap),
+        width: (theme as any).dimension.normalizeWidth(gap) || 0,
       }}
     />
   );

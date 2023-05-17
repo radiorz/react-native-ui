@@ -167,9 +167,11 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@storybook/react-native": "^6.5.3",
     "@types/lodash": "^4.14.194",
+    "@types/styled-components-react-native": "^5.2.1",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-styled-components": "^2.1.1",
-    "react-native-reanimated": "~2",
-    "styled-components": "^6.0.0-rc.1"
+    "react-native-linear-gradient": "^2.6.2",
+    "react-native-reanimated": "^3.1.0",
+    "styled-components": "^5.3.10"
   }
 }
