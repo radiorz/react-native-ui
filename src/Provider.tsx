@@ -34,6 +34,7 @@ function Provider({
   colors = commonBlue,
   children,
 }: ProviderProps) {
+  // TODO change theme
   return (
     <StyledThemeProvider theme={{ colors, dimension }}>
       <>
