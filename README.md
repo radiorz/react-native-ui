@@ -21,6 +21,18 @@ Avatar、Badge、BottomSheet、Button、Canlendar、Cascader、CheckBox、DateTi
 ### 布局
 布局参考的还是 native-base, 他将各种属性类似 windi-css 一样把所有style属性放在组件props中, 然后就可以利用 flexBox 布局快速布局出想要的布局
 没有实现响应式,因为设计没有响应式,都是确定的宽高比例.
+## 遗憾与TODO
+### 按需引入与按需安装依赖
+比较遗憾,用这个包需要独立安装很多个rn 依赖, 不能说没有引用到就不安装...
+所以这个库只能保持克制,尽量少引用其他库
+### alias typescript
+react-native-builder-bob 目前 typescript 用不了 alias(因为 typescript 不打包),所以不要在这个项目中使用 alias。
+### 国际化等的自定义
+现在直接用了 react-i18next
+这个东西还不能自己进行配置,没整明白
+使用时尽量避开国际化,有国际化自己传入国际化信息即可.
+### example 暂时跑不了
+因为目前项目使用的是旧的 react-native(使用的项目大部分是0.66 的), 所以 example 还得自行配置,不然 expo 版本会不符合跑不了.
 ## Installation
 
 ```sh
