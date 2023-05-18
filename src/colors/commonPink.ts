@@ -5,7 +5,7 @@ export const 文字背景色深 = '#ed2b41'; // 400
 export const 渐变背景色浅 = '#f2596b'; // 300
 export const 文字背景色浅 = '#f78894'; // 200
 export const 文字背景色 = '#feb6bf'; // 100
-export const 留白背景色浅蓝 = '#ffe3e8'; // 50
+export const 留白背景色浅 = '#ffe3e8'; // 50
 export const 留白背景色 = '#FFFFFF'; // 0
 // 表格
 export const 表格标题背景色 = 渐变背景色浅;
