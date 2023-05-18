@@ -25,6 +25,7 @@ Avatar、Badge、BottomSheet、Button、Canlendar、Cascader、CheckBox、DateTi
 ### 按需引入与按需安装依赖
 比较遗憾,用这个包需要独立安装很多个rn 依赖, 不能说没有引用到就不安装...
 所以这个库只能保持克制,尽量少引用其他库
+并且好在内部项目,依赖项大差不差,所以真实影响也不大.
 // 或许可以尝试一下 vite 等其他打包方式
 ### alias typescript
 react-native-builder-bob 目前 typescript 用不了 alias(因为 typescript 不打包),所以不要在这个项目中使用 alias。
