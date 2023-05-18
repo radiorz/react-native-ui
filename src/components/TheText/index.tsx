@@ -5,9 +5,11 @@ import { BaseFontSize, BaseFontGap } from '../../utils/variables';
 import { getMarginStyle, getSizeStyle } from '../../style';
 import type Dimension from '../../Dimension';
 export default styled.Text<{
-  textAlign?: string;
+  textAlign?: any;
   isContrast?: boolean;
-  fontSize?: string | number;
+  fontSize?: any;
+  bold?: boolean;
+  color?: string;
 }>`
   ${getFontSizeStyle}
   ${getSizeStyle}

@@ -83,7 +83,8 @@
     "react-native": "^0.66",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-reanimated": "*",
-    "styled-component": "*"
+    "styled-component": "*",
+    "react-i18next": "*"
   },
   "engines": {
     "node": ">= 16.0.0"
@@ -170,6 +171,7 @@
     "@types/styled-components-react-native": "^5.2.1",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-styled-components": "^2.1.1",
+    "react-i18next": "^12.2.2",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-reanimated": "^3.1.0",
     "styled-components": "^5.3.10"

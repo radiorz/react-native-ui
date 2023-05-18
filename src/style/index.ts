@@ -63,11 +63,11 @@ function getBgStyle({ bg }: any) {
 export function getColorStyle(...values: any[]) {
   return `${getBgColorStyle(values[0])}`;
 }
-function getNumberFromAlias(alias: string, aliases: any = {}) {
+function getNumberFromAlias(alias?: string | number, aliases: any = {}) {
   if (isString(alias)) {
     return aliases[alias] || 0;
   }
-  return alias;
+  return alias || 0;
 }
 export function getRoundedStyle({
   rounded,

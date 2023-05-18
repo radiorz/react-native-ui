@@ -15,16 +15,16 @@ import React, { memo } from 'react';
 import { View } from 'react-native';
 import { FLEX_DIRECTIONS, ONE_SPACE_NUMBER } from '../../utils/variables';
 import { useTheme } from 'styled-components/native';
-interface GapperProps {
-  gap?: number;
-  gapLevel?: number;
-  flexDirection?: string;
-}
-function Gapper(props: GapperProps) {
+// interface GapperProps {
+//   gap?: number;
+//   gapLevel?: number;
+//   flexDirection?: string;
+// }
+function Gapper(props: any) {
   let { gap } = props;
   const { gapLevel, flexDirection } = props;
   const theme = useTheme();
-  console.log(`theme`, theme);
+  // console.log(`theme`, theme);
   if (!gap && gapLevel) gap = gapLevel * ONE_SPACE_NUMBER;
   // console.log(`flexDirection`, flexDirection, gap);
   // 垂直

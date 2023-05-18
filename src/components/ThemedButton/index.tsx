@@ -22,15 +22,9 @@ import { toCamel } from '../../utils/funcs';
 import { Flex as Box, Row } from '../TheFlex';
 import { BUTTON_VARIANTS } from '../../utils/variables';
 import Text from '../ThemedText';
-
-function Button({
-  title,
-  children,
-  onPress,
-  icon: renderIcon,
-  theme,
-  ...rest
-}: any) {
+import { useTheme } from 'styled-components/native';
+function Button({ title, children, onPress, icon: renderIcon, ...rest }: any) {
+  const theme: any = useTheme();
   // Box 的属性
   const restProps = useMemo(() => {
     const props: any = {};
@@ -118,7 +112,7 @@ function addVariant({
   } else if (mode === 'contained') {
     _bgColor =
       theme?.colors?.[(BUTTON_VARIANTS as any)[_variant]] ||
-      theme?.colors?.文字图标蓝;
+      theme?.colors?.主题文字色;
   }
   return {
     bgColor: _bgColor,

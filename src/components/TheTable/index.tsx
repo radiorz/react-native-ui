@@ -1,6 +1,5 @@
 import React, { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { isArray } from 'lodash';
-import PropTypes from 'prop-types';
 import { Pressable, ScrollView, View, FlatList } from 'react-native';
 // import { Row, Table } from 'react-native-table-component';
 import { Center, Column, Row } from '../TheFlex';
@@ -102,7 +101,7 @@ export default function TheTable({
   const view = (
     <View style={{ flex: 1 }}>
       <Row px={5 / 4} w={w} style={{ backgroundColor: headerColor }}>
-        {headers.map((title: string, index: number) => (
+        {headers.map((title: any, index: number) => (
           // TODO 每一个column 进行定制
           <Column
             key={index}
@@ -198,19 +197,3 @@ export default function TheTable({
     </ScrollView>
   );
 }
-
-TheTable.propTypes = {
-  headers: PropTypes.arrayOf(
-    PropTypes.shape({
-      key: PropTypes.string,
-      title: PropTypes.string,
-      width: PropTypes.number,
-    })
-  ).isRequired,
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      key: PropTypes.string,
-      // value,
-    })
-  ),
-};
