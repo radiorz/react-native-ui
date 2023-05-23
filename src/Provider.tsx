@@ -15,7 +15,7 @@
 import * as React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components/native';
 import Dimension from './Dimension';
-import { commonBlue } from './colors';
+import { lightBlue } from './colors';
 interface ProviderProps {
   dimension: Dimension;
   colors?: any;
@@ -31,7 +31,7 @@ interface ProviderProps {
 
 function Provider({
   dimension = new Dimension(),
-  colors = commonBlue,
+  colors = lightBlue,
   children,
 }: ProviderProps) {
   // TODO change theme

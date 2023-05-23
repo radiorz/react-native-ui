@@ -6,6 +6,6 @@ export default styled(Text).attrs(
   ({ color, theme = {}, isContrast = false }: any) => ({
     color:
       color ||
-      (isContrast ? theme?.colors?.文字图标白 : theme?.colors?.文字图标黑),
+      (isContrast ? theme?.colors?.文字图标相反 : theme?.colors?.文字图标默认),
   })
 )``;

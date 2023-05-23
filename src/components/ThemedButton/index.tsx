@@ -103,9 +103,9 @@ function addVariant({
   } else if (mode === 'text') {
     _textColor =
       theme?.colors?.[(BUTTON_VARIANTS as any)[_variant]] ||
-      theme?.colors?.文字图标黑;
+      theme?.colors?.文字图标默认;
   } else if (mode === 'contained') {
-    _textColor = theme?.colors?.文字图标白;
+    _textColor = theme?.colors?.文字图标相反;
   }
   if (bgColor) {
     _bgColor = bgColor;

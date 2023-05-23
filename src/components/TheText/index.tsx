@@ -50,8 +50,8 @@ export function getFontSizeStyle({
 // 颜色
 export function getTextColorStyle({ color, theme, isContrast }: any) {
   if (color) return `color: ${color}`;
-  if (isContrast && theme) return `color: ${theme.colors.文字图标白};`;
-  if (theme) return `color: ${theme.colors.文字图标黑}`;
+  if (isContrast && theme) return `color: ${theme.colors.文字图标相反};`;
+  if (theme) return `color: ${theme.colors.文字图标默认}`;
   return '';
 }
 // 重量(粗细)
